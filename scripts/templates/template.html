@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h3>Dear {{name}}, Welcome abord!</h3>
+    <p>We are extreemly delighted to see you on bording our hotel! We assure you that this will be an unforgetable experience for you!</p>
+
+    {% if deposit <= 1000 %}
+        <h3>You are our Silver member customer.</h3>
+    {% elif deposit >=1001 and deposit <= 3000 %}
+        <h3>You are our Gold member customer.</h3>
+    {% elif deposit >= 3000 %}
+        <h3>You are our Platinum member customer.</h3>
+    {% endif %}
+</body>
+</html>
